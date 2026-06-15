@@ -1,0 +1,17 @@
+# GitHub Pages Configuration
+theme: null
+title: 4K Wallpaper
+description: Premium Digital Content & High-Resolution Wallpapers
+url: https://ganeshivam2004-png.github.io/4kwallpaper
+baseurl: /4kwallpaper
+
+# Build settings
+exclude:
+  - .git
+  - .gitignore
+  - README.md
+  - LICENSE
+
+# Enable source maps for CSS
+sass:
+  style: compressed
