@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>4KWallpaper - Free Ultra HD, 4K & AMOLED Wallpapers</title>
+
+<meta name="description" content="Download free Ultra HD, 4K, AMOLED, Nature, Gaming, Anime, Cars, Space and iPhone wallpapers. High-quality wallpapers for mobile, desktop, tablets and laptops.">
+
+<meta name="keywords" content="4K Wallpaper, HD Wallpaper, AMOLED Wallpaper, Mobile Wallpaper, Desktop Wallpaper, iPhone Wallpaper, Gaming Wallpaper, Anime Wallpaper, Nature Wallpaper">
+
+<meta name="author" content="4KWallpaper">
+
+<meta property="og:title" content="4KWallpaper - Free Ultra HD Wallpapers">
+<meta property="og:description" content="Download thousands of premium 4K wallpapers for desktop and mobile devices.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="logo.png">
+
+<link rel="icon" href="favicon.ico">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,Helvetica,sans-serif;
+}
+
+body{
+background:#000;
+color:#fff;
+}
+
+header{
+padding:20px 50px;
+display:flex;
+align-items:center;
+justify-content:space-between;
+border-bottom:1px solid #222;
+}
+
+.logo{
+display:flex;
+align-items:center;
+gap:12px;
+}
+
+.logo img{
+width:60px;
+height:60px;
+border-radius:15px;
+}
+
+.logo h1{
+font-size:28px;
+font-weight:700;
+}
+
+.hero{
+text-align:center;
+padding:100px 20px;
+}
+
+.hero h2{
+font-size:60px;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:20px;
+max-width:700px;
+margin:auto;
+color:#bbb;
+}
+
+.btn{
+display:inline-block;
+margin-top:30px;
+padding:15px 35px;
+background:#0A84FF;
+color:white;
+text-decoration:none;
+border-radius:12px;
+font-weight:bold;
+}
+
+.categories{
+padding:80px 20px;
+text-align:center;
+}
+
+.categories h3{
+font-size:40px;
+margin-bottom:40px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+max-width:1200px;
+margin:auto;
+}
+
+.card{
+background:#111;
+padding:30px;
+border-radius:15px;
+}
+
+.card h4{
+margin-bottom:10px;
+}
+
+footer{
+padding:40px;
+text-align:center;
+border-top:1px solid #222;
+color:#888;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="logo">
+<img src="logo.png" alt="4KWallpaper Logo">
+<h1>4KWallpaper</h1>
+</div>
+</header>
+
+<section class="hero">
+<h2>Free 4K Wallpapers</h2>
+
+<p>
+Discover thousands of Ultra HD wallpapers for smartphones, desktops,
+laptops and tablets. Updated daily with stunning high-quality images.
+</p>
+
+<a href="#" class="btn">Browse Wallpapers</a>
+</section>
+
+<section class="categories">
+
+<h3>Popular Categories</h3>
+
+<div class="grid">
+
+<div class="card">
+<h4>🌄 Nature Wallpapers</h4>
+<p>Mountains, forests, beaches and landscapes.</p>
+</div>
+
+<div class="card">
+<h4>🚗 Car Wallpapers</h4>
+<p>Luxury, sports and supercar backgrounds.</p>
+</div>
+
+<div class="card">
+<h4>🎮 Gaming Wallpapers</h4>
+<p>4K gaming wallpapers from top titles.</p>
+</div>
+
+<div class="card">
+<h4>🌌 Space Wallpapers</h4>
+<p>Planets, galaxies and cosmic artwork.</p>
+</div>
+
+<div class="card">
+<h4>📱 AMOLED Wallpapers</h4>
+<p>Deep black wallpapers for OLED displays.</p>
+</div>
+
+<div class="card">
+<h4>🎨 Anime Wallpapers</h4>
+<p>High-quality anime and manga backgrounds.</p>
+</div>
+
+</div>
+
+</section>
+
+<footer>
+<p>© 2026 4KWallpaper. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
