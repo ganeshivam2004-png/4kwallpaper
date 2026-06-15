@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Explore stunning 4K wallpapers and high-quality digital content. Fast-loading, SEO-optimized blog.">
+    <meta name="description" content="4K Wallpaper - Premium Digital Content & High-Resolution Wallpapers. Fast-loading, SEO-optimized blog.">
     <meta name="keywords" content="4K wallpapers, digital art, high-resolution images, wallpaper blog">
     <meta name="author" content="4K Wallpaper Studio">
     <meta property="og:title" content="4K Wallpaper - Premium Digital Content">
@@ -21,7 +21,25 @@
     <header class="header">
         <div class="header-container">
             <div class="logo-text">
-                <a href="index.html" class="logo-link">4K Wallpaper</a>
+                <a href="index.html" class="logo-link">
+                    <svg class="logo-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Dark background with rounded corners -->
+                        <rect width="100" height="100" rx="20" fill="#000"/>
+                        <!-- Gradient overlay -->
+                        <defs>
+                            <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#000;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#333;stop-opacity:1" />
+                            </linearGradient>
+                        </defs>
+                        <rect width="100" height="100" rx="20" fill="url(#bgGradient)"/>
+                        <!-- White "4" -->
+                        <text x="50" y="75" font-size="70" font-weight="bold" fill="white" text-anchor="middle" font-family="Arial, sans-serif">4</text>
+                        <!-- Blue dot accent -->
+                        <circle cx="75" cy="25" r="10" fill="#1e90ff"/>
+                    </svg>
+                    <span class="logo-text-label">4K Wallpaper</span>
+                </a>
             </div>
             <nav class="header-nav">
                 <ul class="nav-links">
@@ -33,6 +51,12 @@
         </div>
     </header>
 
+    <!-- Loading Indicator -->
+    <div id="loadingIndicator" class="loading-indicator">
+        <div class="spinner"></div>
+        <p>Loading posts from GitHub...</p>
+    </div>
+
     <!-- Main Content -->
     <main class="main-container">
         <!-- Posts Feed -->
@@ -40,14 +64,17 @@
             <div class="posts-list" id="postsGrid">
                 <!-- Posts will be loaded here by JavaScript -->
             </div>
+            <div id="noPostsMessage" class="no-posts-message" style="display:none;">
+                <p>No posts found. Create markdown files in the GitHub repository posts folder to get started!</p>
+            </div>
         </section>
     </main>
 
     <!-- About Section -->
     <section class="about-section" id="about">
         <div class="about-container">
-            <h2>About This Blog</h2>
-            <p>Welcome to 4K Wallpaper Studio, your destination for stunning high-resolution digital content and creative inspiration. We showcase the latest trends in digital art, wallpaper design, and aesthetic excellence.</p>
+            <h2>About 4K Wallpaper</h2>
+            <p>Welcome to 4K Wallpaper Studio, your destination for stunning high-resolution digital content and creative inspiration. We showcase the latest trends in digital art, wallpaper design, and aesthetic excellence. Explore premium 4K wallpapers and digital content curated for modern aesthetics.</p>
         </div>
     </section>
 
@@ -57,7 +84,7 @@
             <h2>Get In Touch</h2>
             <p>Connect with us on social media or reach out for inquiries.</p>
             <div class="social-links">
-                <a href="#" class="social-btn">GitHub</a>
+                <a href="https://github.com/ganeshivam2004-png" target="_blank" class="social-btn">GitHub</a>
                 <a href="#" class="social-btn">Twitter</a>
                 <a href="#" class="social-btn">Instagram</a>
             </div>
@@ -89,7 +116,7 @@
         </div>
     </div>
 
-    <script src="js/posts.js"></script>
+    <script src="js/github-posts.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>

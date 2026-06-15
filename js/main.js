@@ -1,11 +1,15 @@
 // Open post in modal
 function openPostModal(postId) {
+    const posts = window.postsData;
     const post = posts.find(p => p.id === postId);
     
     if (!post) return;
     
     const modalPostContent = document.getElementById('modalPostContent');
     const modal = document.getElementById('postModal');
+    
+    // Convert markdown to HTML
+    const htmlContent = markdownToHtml(post.content);
     
     modalPostContent.innerHTML = `
         <div class="modal-post-header">
@@ -17,9 +21,9 @@ function openPostModal(postId) {
                 <span>By 4K Wallpaper Studio</span>
             </div>
         </div>
-        <img src="${post.image}" alt="${post.title}" class="modal-post-image" loading="lazy">
+        <img src="${post.image}" alt="${post.title}" class="modal-post-image" loading="lazy" onerror="this.src='https://via.placeholder.com/720x400?text=4K+Wallpaper'">
         <div class="modal-post-body">
-            ${post.body}
+            ${htmlContent}
         </div>
         <div class="modal-post-footer">
             <div class="modal-post-tags">
@@ -95,4 +99,4 @@ if ('IntersectionObserver' in window) {
 }
 
 // Console message
-console.log('🎨 Welcome to 4K Wallpaper Studio - Medium.com style blog with sleek UI/UX');
+console.log('🎨 Welcome to 4K Wallpaper Studio - Medium.com style blog with GitHub integration');
